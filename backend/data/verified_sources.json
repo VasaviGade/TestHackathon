@@ -1,0 +1,70 @@
+{
+  "documents": {
+    "fssai_licensing_registration_amendment_2026-03-10.pdf": {
+      "title": "Food Safety and Standards (Licensing and Registration of Food Businesses) Amendment Regulations, 2026",
+      "issuing_authority": "Food Safety and Standards Authority of India (FSSAI)",
+      "source_url": "https://fssai.gov.in/upload/uploadfiles/files/1_Notification%20dt%2010_03_2026.pdf",
+      "publication_date": "2026-03-10",
+      "portal_updated_on": "2026-03-12",
+      "retrieved_at": "2026-11-21",
+      "verification_status": "unverified",
+      "review_status": "UNVERIFIED - requires curator review",
+      "review_notes": "Official Gazette amendment. Review text, commencement and interaction with subsequent amendments before relying on it."
+    },
+    "fssai_revised_turnover_order_2026-03-13.pdf": {
+      "title": "Implementation of Revised Turnover Threshold for Food Businesses under the Licensing and Registration Regulations, 2011",
+      "issuing_authority": "Food Safety and Standards Authority of India (FSSAI), Regulatory Compliance Division",
+      "source_url": "https://www.fssai.gov.in/docs/food-law/advisory/69b4054bb6cd6Order%20dated%2013thMarch2026_Revised%20Turnover%20threshold.pdf",
+      "publication_date": "2026-03-13",
+      "portal_updated_on": "2026-03-13",
+      "retrieved_at": "2026-11-21",
+      "verification_status": "unverified",
+      "review_status": "UNVERIFIED - requires curator review",
+      "review_notes": "Order states revised thresholds effective 2026-04-01 and supersedes earlier turnover thresholds. Confirm scope and later updates."
+    },
+    "fssai_licensing_amendment_faq_2026-03-27.pdf": {
+      "title": "FAQs on Food Safety and Standards (Licensing and Registration of Food Businesses) Amendment Regulations, 2026",
+      "issuing_authority": "Food Safety and Standards Authority of India (FSSAI), Regulatory Compliance Division",
+      "source_url": "https://fssai.gov.in/upload/advisories/2026/03/69c6a23234827order_27032026.pdf",
+      "publication_date": "2026-03-27",
+      "portal_updated_on": "2026-03-27",
+      "retrieved_at": "2026-11-21",
+      "verification_status": "unverified",
+      "review_status": "UNVERIFIED - requires curator review",
+      "review_notes": "Official FAQ. Check it against the Gazette and later FSSAI orders; FAQ is explanatory material."
+    },
+    "foscos_kind_of_business_eligibility_2026-04-01.pdf": {
+      "title": "Kind of Business Eligibility Criteria - revised table updated 01.04.2026",
+      "issuing_authority": "Food Safety and Standards Authority of India (FSSAI), FoSCoS",
+      "source_url": "https://foscos.fssai.gov.in/assets/docs/Revised_2ndApril2026KindofBusinessEligibility.pdf",
+      "publication_date": null,
+      "last_updated": "2026-04-01",
+      "retrieved_at": "2026-11-21",
+      "verification_status": "unverified",
+      "review_status": "UNVERIFIED - requires curator review",
+      "review_notes": "Table includes business-kind criteria and fees. Verify the current FoSCoS live selector, exact business activity/category, special cases and fee before communicating applicability."
+    },
+    "fssai_registration_form_a.pdf": {
+      "title": "Form A - Application for Registration / Renewal of Registration under the Food Safety and Standards Act, 2006",
+      "issuing_authority": "Food Safety and Standards Authority of India (FSSAI), FoSCoS",
+      "source_url": "https://foscos.fssai.gov.in/assets/docs/registrationForm_A.pdf",
+      "publication_date": null,
+      "last_updated": null,
+      "retrieved_at": "2026-11-21",
+      "verification_status": "unverified",
+      "review_status": "UNVERIFIED - requires curator review",
+      "review_notes": "PDF text contains legacy payment language. Treat as a form reference only; confirm current application fields and supporting-document list in FoSCoS."
+    },
+    "fssai_schedule4_part_ii_amendment_2018.pdf": {
+      "title": "Section IV: Part II of Schedule 4 - Hygienic and Sanitary Practices for Food Businesses Applying for a Licence",
+      "issuing_authority": "Food Safety and Standards Authority of India (FSSAI)",
+      "source_url": "https://www.fssai.gov.in/upload/advisories/2018/07/5b52d90690048Reg-54.pdf",
+      "publication_date": "2018 (exact date to confirm from the Gazette source)",
+      "last_updated": null,
+      "retrieved_at": "2026-11-21",
+      "verification_status": "unverified",
+      "review_status": "UNVERIFIED - historical amendment; check subsequent amendments",
+      "review_notes": "Not a current consolidated Schedule 4. Review together with the March and June 2026 amendments and the current Schedule 4 source page."
+    }
+  }
+}
