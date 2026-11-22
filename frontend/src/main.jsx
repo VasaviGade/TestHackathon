@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ArrowRight, Check, ChevronDown, ClipboardCheck, ExternalLink, FileText, Globe2, MapPin, Mic, Send, ShieldCheck, Sparkles, Store, Volume2 } from 'lucide-react';
 import './style.css';
 
-const API = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API = (import.meta.env.VITE_API_URL || 'https://testhackathon.onrender.com').replace(/\/$/, '');
 const types = ['Tea stall', 'Food stall', 'Home bakery'];
 const copy = {
   en: {
@@ -102,10 +102,14 @@ function App() {
     try {
       const history = msgs.slice(-8).map(turn => ({ role: turn.role, text: turn.text, sources: turn.sources || [] }));
       const response = await fetch(`${API}/api/chat`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...profile, question, history }) });
-      if (!response.ok) throw new Error('Assistant service unavailable');
+      if (!response.ok) throw new Error(`Assistant API returned HTTP ${response.status}`);
       const data = await response.json();
+      if (typeof data.answer !== 'string') throw new Error('Assistant API returned an invalid response');
       setMsgs(m => [...m, { role: 'assistant', text: data.answer, sources: data.sources || [] }]);
-    } catch { setMsgs(m => [...m, { role: 'assistant', text: t.unavailable, sources: [] }]); }
+    } catch (error) {
+      const detail = error instanceof TypeError ? 'Network or CORS error' : error.message;
+      setMsgs(m => [...m, { role: 'assistant', text: `${t.unavailable} (${detail})`, sources: [] }]);
+    }
     finally { setBusy(false); }
   }
 

@@ -64,6 +64,12 @@ Gemini failures return a friendly, source-aware fallback. No API key or exceptio
 
 See `.env.example`. The default embedding model is multilingual and may need to download on first retrieval. If model downloads are unavailable, the API logs the issue and attempts lexical retrieval. You can set `RAG_MAX_COSINE_DISTANCE` to tune the vector relevance cutoff and `CORS_ORIGINS` for the allowed browser origins.
 
+### Production deployment
+
+For the Vercel frontend, set the build environment variable `VITE_API_URL` to the public FastAPI base URL, with no trailing slash (for example, `https://testhackathon.onrender.com`). The frontend also defaults to this Render URL if the variable is omitted. Vite embeds `VITE_*` values at build time, so redeploy the frontend after changing it.
+
+For the Render backend, set `CORS_ORIGINS` to a comma-separated list of complete browser origins, including `https://permitpath-ewvdz1vev-vasavigade.vercel.app` (no path or trailing slash). Keep `GEMINI_API_KEY` configured only in Render's backend environment; never add it to a `VITE_*` variable or frontend source. Redeploy/restart the backend after changing its environment.
+
 ## Manual smoke check
 
 1. Start both services and open the home page at desktop and mobile widths.

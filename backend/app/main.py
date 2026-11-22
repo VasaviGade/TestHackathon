@@ -26,7 +26,8 @@ SOURCE_CATALOG = ROOT / "data" / "official_sources.json"
 logger = logging.getLogger("permitpath")
 
 app = FastAPI(title="PermitPath AI", description="Grounded regulatory information for small businesses")
-origins = [x.strip() for x in os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",") if x.strip()]
+default_origins = "http://localhost:5173,http://127.0.0.1:5173,https://permitpath-ewvdz1vev-vasavigade.vercel.app"
+origins = [x.strip().rstrip("/") for x in os.getenv("CORS_ORIGINS", default_origins).split(",") if x.strip()]
 app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET", "POST"], allow_headers=["Content-Type"])
 
 
